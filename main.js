@@ -35,18 +35,20 @@ function activateMenuAtCurrentSection(section) {
 }
 
 function showNavOnScroll() {
+  let Navigation = document.querySelector("#navigation")
   if (scrollY > 10) {
-    navigation.classList.add('scroll')
+    Navigation.classList.add('scroll')
   } else {
-    navigation.classList.remove('scroll')
+    Navigation.classList.remove('scroll')
   }
 }
 
 function showBackToTopButtonOnScroll() {
+  let BackToTopButton = document.querySelector("#backToTopButton")
   if (scrollY > 400) {
-    backToTopButton.classList.add('show')
+    BackToTopButton.classList.add('show')
   } else {
-    backToTopButton.classList.remove('show')
+    BackToTopButton.classList.remove('show')
   }
 }
 
